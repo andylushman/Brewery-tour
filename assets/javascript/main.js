@@ -15,7 +15,7 @@ var currentPlaceReview;
 var currentPlaceAuthor;
 var currentPlaceHours;
 var currentPlaceRating;
-var googlePlacesKey = "AIzaSyAayhY8ruruLoqLHOu49qli99n4lw2FjBQ";
+var googlePlacesKey = "";
 var googlePlacesQuery = "https://maps.googleapis.com/maps/api/place/details/json?placeid=" + currentPlaceId + "&key=" + googlePlacesKey;
 var that;
 var currentPlaceReviewTime;
@@ -299,7 +299,7 @@ function ajaxCall(genericName, that){
 
   console.log(googlePlacesQuery);
 
-  var googlePlacesKey = "AIzaSyAayhY8ruruLoqLHOu49qli99n4lw2FjBQ";
+  var googlePlacesKey = "";
   var googlePlacesQuery = "https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/details/json?placeid=" + currentPlaceId + "&key=" + googlePlacesKey;
   console.log(googlePlacesQuery);
 
