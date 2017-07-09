@@ -1,11 +1,7 @@
-html, body {
+html, body{
   height: 100%;
   margin: 0;
   padding: 0;
-}
-
-.wrapper {
-  min-height: 100%;
 }
 
 /***********************
@@ -84,7 +80,6 @@ h4 {
 }
 
 .accordion {
-  font-family: 'Fresca', sans-serif;
   color: #d2dfe5;
   font-size: 18px;
   margin: 5px;
@@ -109,9 +104,10 @@ h4 {
 
 .footer {
   height: 50px;
-  margin-top: -50px;
+  margin-top: 0;
   background-color: #172536;
   color: #d2dfe5;
+  position: sticky;
 }
 
 /***********************
@@ -127,17 +123,13 @@ h4 {
 input[type="text"] {
   border-radius: 5px;
   padding-left: 10px;
-  font-family: 'Fresca', sans-serif;
+
 }
 
 select {
   font-family: 'Fresca', sans-serif;
   border-radius: 5px;
   padding: 3px 5px;
-}
-
-.dropdown-menu {
-  font-family: 'Fresca', sans-serif;
 }
 
 .panel {
