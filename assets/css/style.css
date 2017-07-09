@@ -80,19 +80,37 @@ h4 {
 }
 
 .accordion {
-  color: #d2dfe5;
-  font-size: 18px;
+  background-color: #2a3f5c;
+  color: #8e9ca9;
+  font-size: 15px;
   margin: 5px;
+  overflow: hidden;
+}
+
+.accordion:focus {
+  border: none;
+}
+
+.accordion:after {
+  border: none;
+}
+
+#remove-btn {
+  background-color: #db5b00;
 }
 
 .panel {
   text-align: center;
 }
 
+.panel p {
+  color: #172536;
+}
+
 .results {
   background-image: url("../images/results-container.jpg");
   background-size: cover;
-  height: 300px;
+  height: 400px;
   overflow: auto;
   border: 8px solid #172536;
   border-radius: 15px;
@@ -103,13 +121,17 @@ h4 {
   margin-bottom: 2em;
 }
 
-.footer {
+.results h4 {
+  text-align: center;
+}
+
+/*.footer {
   height: 50px;
   margin-top: 0;
   background-color: #172536;
   color: #d2dfe5;
   position: sticky;
-}
+}*/
 
 /***********************
     Maps
@@ -183,31 +205,27 @@ li {
   margin: auto;
   width: 50%;
   padding: 2em;
-  background-color: white;
+  background-image: url("../images/results-container.jpg");
+}
+
+#modal-21 p {
+  color: #172536;
 }
 
 .modal-btn {
+  background-color: #2a3f5c;
+  color: #8e9ca9;
+  font-size: 15px;
+  margin: 5px;
   width: 5em;
 }
 
-#modal-enter{
-  background-color: #82f537;
-  border: none;
-  color: #8c0ee6;
-  font-weight: bold;
-}
-
-#modal-exit {
-  background-color: #ffa339;
-  border: none;
-  color: #8c0ee6;
-  font-weight: bold;
-}
 
 /***********************
     Media-Queries
 ***********************/
 @media only screen and (max-width: 1200px) {
+
   .results {
     background-image: url("../images/results-container.jpg");
     background-size: cover;
@@ -222,6 +240,34 @@ li {
     margin-bottom: 0;
   }
 
+@media only screen and (max-width: 850px) {
 
+  #directions {
+    display: block;
+    color: #d2dfe5;
+    font-size: 18px;
+    margin: auto;
+    margin-bottom: 10px;
+    vertical-align: text-bottom;
+    display: table;
+  }
 
+  #startLocation {
+    width: 350px;
+    background-color: #464c53;
+    border: none;
+    outline: none;
+    color: #d2dfe5;
+    line-height: 40px;
+    font-size: 20px;
+    vertical-align: bottom;
+    margin: auto;
+    display: block;
+  }
+  .form {
+    background-color: #172536;
+    padding: 5px;
+    height: 140px;
+    overflow: auto;
+  }
 }
