@@ -1,36 +1,16 @@
 /***********************
     Fonts
 ***********************/
-.header-icon {
-  height: 80px;
-  display: inline-block;
-  margin: -6px 24px 5px 3px;
-}
-
-.h1 {
-  font-family: "Luckiest Guy", cursive;
-  text-shadow: 4px 3px 6px #fff;
-  display: inline-block;
-}
-
-h4{
-  font-family: "Luckiest Guy", cursive;
-}
-
-h5 {
-  font-family: "Luckiest Guy", cursive;
-}
-
-p {
-  font-family: "Fresca", sans-serif;
-}
-
 #directions {
   display: inline-block;
-  color: white;
+  color: #d2dfe5;
   font-family: 'Fresca', sans-serif;
   font-size: 18px;
   margin: 5px;
+}
+
+p button {
+  color: #d2dfe5;
 }
 
 /***********************
@@ -41,7 +21,7 @@ p {
 }
 
 .form {
-  background-color: #8c0ee6;
+  background-color: #172536;
   padding: 5px;
 }
 
@@ -77,14 +57,17 @@ h4 {
 }
 
 .results {
-  background-color: #82f537;
+  background-color: #e7d3b8;
   height: 300px;
   overflow: auto;
+  border: 8px solid #172536;
+  border-radius: 15px;
+  z-index: 1;
 }
 
 .footer {
   padding: 10px;
-  background-color: #8c0ee6;
+  background-color: #172536;
   color: #fff;
 }
 

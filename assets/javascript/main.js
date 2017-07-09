@@ -209,37 +209,6 @@ function loadCards() {
   }); //End database.ref()
 } //End loadCards()
 
-// function mapScope() {
-//   var scope = $(".transportation");
-//
-//   if (scope = "walking") {
-//     radiusDistance = 2000;
-//     zoomLevel = 14;
-//   } else if (scope = "bicyle") {
-//       radiusDistance = 5000;
-//       zoomLevel = 8;
-//   }
-//     else if (scope = "rideshare") {
-//       radiusDistance = 10000;
-//       zoomLevel = 4;
-//     }
-//     else {
-//       radiusDistance = 2000;
-//       zoomLevel = 14;
-//     }
-//   console.log(scope);
-//   }
-// $(".transportation").on("change", function() {
-//   mapScope();
-// })
-
-
-// function loadMap {
-//   setStarterLocation();
-//   mapScope();
-//   initMap();
-// }
-
 function myLocationMarker (place) {
  var placeLoc = place.geometry.location;
   var image = {
