@@ -91,6 +91,7 @@ h4 {
 
 .results {
   background-image: url("../images/results-container.jpg");
+  background-size: cover;
   height: 300px;
   overflow: auto;
   border: 8px solid #172536;
@@ -201,4 +202,26 @@ li {
   border: none;
   color: #8c0ee6;
   font-weight: bold;
+}
+
+/***********************
+    Media-Queries
+***********************/
+@media only screen and (max-width: 1200px) {
+  .results {
+    background-image: url("../images/results-container.jpg");
+    background-size: cover;
+    height: 300px;
+    overflow: auto;
+    border: 8px solid #172536;
+    border-radius: 0;
+    z-index: 0;
+    position: relative;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+
+
 }
