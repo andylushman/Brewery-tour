@@ -1,0 +1,187 @@
+/***********************
+    Fonts
+***********************/
+.header-icon {
+  height: 80px;
+  display: inline-block;
+  margin: -6px 24px 5px 3px;
+}
+
+.h1 {
+  font-family: "Luckiest Guy", cursive;
+  text-shadow: 4px 3px 6px #fff;
+  display: inline-block;
+}
+
+h4{
+  font-family: "Luckiest Guy", cursive;
+}
+
+h5 {
+  font-family: "Luckiest Guy", cursive;
+}
+
+p {
+  font-family: "Fresca", sans-serif;
+}
+
+#directions {
+  display: inline-block;
+  color: white;
+  font-family: 'Fresca', sans-serif;
+  font-size: 18px;
+  margin: 5px;
+}
+
+/***********************
+    Page Layout
+***********************/
+#startLocation {
+  width: 300px;
+}
+
+.form {
+  background-color: #8c0ee6;
+  padding: 5px;
+}
+
+.header {
+  background-color: #ffa339;
+  color: #49027c;
+}
+
+.btn-success {
+  background-color: #82f537;
+  color: #8c0ee6;
+  font-weight: 700;
+}
+
+.map {
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  color: #8c0ee6;
+}
+
+.accordion {
+  background-color: #8c0ee6;
+  font-family: 'Fresca', sans-serif;
+  font-size: 18px;
+  margin: 5px;
+}
+
+.panel {
+  text-align: center;
+}
+
+.results {
+  background-color: #82f537;
+  height: 300px;
+  overflow: auto;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #8c0ee6;
+  color: #fff;
+}
+
+/***********************
+    Maps
+***********************/
+#map {
+  height: 300px;
+  width: 100%;
+  height: 100%;
+  width: 100%
+  border: 1px solid #000;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+  padding-left: 10px;
+  font-family: 'Fresca', sans-serif;
+}
+
+select {
+  font-family: 'Fresca', sans-serif;
+  border-radius: 5px;
+  padding: 3px 5px;
+}
+
+.dropdown-menu {
+  font-family: 'Fresca', sans-serif;
+}
+
+.panel {
+  padding: 5px;
+}
+
+.hours {
+  margin-left: 5px;
+  line-height: 8px;
+}
+
+.author {
+  text-align: right;
+  font-style: italic;
+}
+
+li {
+  padding-left: 10px;
+  font-size: 16px;
+}
+
+.open>.dropdown-menu {
+    display: block;
+    width: 106px;
+    margin-left: 175px;
+    background-color: #fff;
+}
+
+.dropdown-menu {
+  min-width: 0;
+}
+
+/***********************
+    Modal
+***********************/
+#modal-21 {
+  padding-top: 5em;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(51,51,51,0.9);
+  z-index: 1;
+  text-align: center;
+}
+
+#modal-body {
+  margin-top: 10px;
+  margin: auto;
+  width: 50%;
+  padding: 2em;
+  background-color: white;
+}
+
+.modal-btn {
+  width: 5em;
+}
+
+#modal-enter{
+  background-color: #82f537;
+  border: none;
+  color: #8c0ee6;
+  font-weight: bold;
+}
+
+#modal-exit {
+  background-color: #ffa339;
+  border: none;
+  color: #8c0ee6;
+  font-weight: bold;
+}
