@@ -1,28 +1,66 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+}
+
 /***********************
     Fonts
 ***********************/
+* {
+  font-family: "Bebas", helvetica, arial;
+}
+
+
 #directions {
   display: inline-block;
   color: #d2dfe5;
-  font-family: 'Fresca', sans-serif;
   font-size: 18px;
   margin: 5px;
+  vertical-align: text-bottom;
 }
 
-p button {
+p {
   color: #d2dfe5;
 }
 
 /***********************
     Page Layout
 ***********************/
+#header {
+  display: inline-block;
+  padding-right: 1em;
+}
+
+#header h4 {
+  margin-top: 0;
+}
+
+#header p {
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+
 #startLocation {
-  width: 300px;
+  width: 450px;
+  background-color: #464c53;
+  border: none;
+  outline: none;
+  color: #d2dfe5;
+  line-height: 40px;
+  font-size: 20px;
+  vertical-align: bottom;
+  margin-bottom: 6px;
 }
 
 .form {
   background-color: #172536;
   padding: 5px;
+  height: 60px;
 }
 
 .header {
@@ -42,12 +80,12 @@ p button {
 }
 
 h4 {
-  color: #8c0ee6;
+  color: #db5b00;
 }
 
 .accordion {
-  background-color: #8c0ee6;
   font-family: 'Fresca', sans-serif;
+  color: #d2dfe5;
   font-size: 18px;
   margin: 5px;
 }
@@ -57,25 +95,29 @@ h4 {
 }
 
 .results {
-  background-color: #e7d3b8;
+  background-image: url("../images/results-container.jpg");
   height: 300px;
   overflow: auto;
   border: 8px solid #172536;
   border-radius: 15px;
   z-index: 1;
+  position: absolute;
+  margin-left: 65em;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .footer {
-  padding: 10px;
+  height: 50px;
+  margin-top: -50px;
   background-color: #172536;
-  color: #fff;
+  color: #d2dfe5;
 }
 
 /***********************
     Maps
 ***********************/
 #map {
-  height: 300px;
   width: 100%;
   height: 100%;
   width: 100%

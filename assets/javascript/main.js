@@ -164,7 +164,7 @@ function createMarker(place) {
 function loadCards() {
   //To help with creating a new id for each card
   $("#results").empty();
-  $("#results").append("<h4>Here's Your Crawl</h4>");
+  $("#results").append("<h4>Here's Your List</h4>");
 
   //Create a new card div
   database.ref().on("child_added", function(snapshot) {
