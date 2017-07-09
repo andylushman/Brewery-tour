@@ -40,7 +40,7 @@ function initMap() {
         autoCompleteLocation();
 
         infoWindow.setPosition(pos);
-        infoWindow.setContent("<img src='https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Scooby-Doo.png/150px-Scooby-Doo.png' alt='Smiley face' height='50' width='25px'>");
+        infoWindow.setContent("<img src='http://simpleicon.com/wp-content/uploads/map-marker-17.png' alt='Map Marker' height='50' width='50px'>");
         infoWindow.open(map);
         map.setCenter(pos);
         console.log(pos);
@@ -182,7 +182,7 @@ function loadCards() {
   $("#card"+[snapshot.key]).append('<p class="hours">' + snapshot.val().hoursOfOperation[4] + '</p>');
   $("#card"+[snapshot.key]).append('<p class="hours">' + snapshot.val().hoursOfOperation[5] + '</p>');
   $("#card"+[snapshot.key]).append('<p class="hours">' + snapshot.val().hoursOfOperation[6] + '</p>');
-  $("#card"+[snapshot.key]).append('<button class="btn btn-danger btn-sm remove" >Remove from Crawl</button>');
+  $("#card"+[snapshot.key]).append('<button id="remove-btn" class="btn btn-danger btn-sm remove" >Remove from Crawl</button>');
 
   //Remove button
   $(".remove").on("click", function(){
@@ -212,8 +212,8 @@ function loadCards() {
 function myLocationMarker (place) {
  var placeLoc = place.geometry.location;
   var image = {
-    url: "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Scooby-Doo.png/150px-Scooby-Doo.png",
-    size: new google.maps.Size(71, 71),
+    url: "http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/map-marker-icon.png",
+    size: new google.maps.Size(51, 71),
     origin: new google.maps.Point(0, 0),
     anchor: new google.maps.Point(17, 34),
     scaledSize: new google.maps.Size(40, 70)
