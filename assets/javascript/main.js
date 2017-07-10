@@ -139,7 +139,7 @@ function createMarker(place) {
     ajaxCall(popUp, that);
 
     function popUp(that){
-      infoWindow.setContent("<h4>" + currentPlaceName + "</h4><p>&quot;" + currentPlaceReview + "&quot;</p><p class='author'> -" +currentPlaceAuthor+ ', ' + currentPlaceReviewTime + '</p><h5>Hours of Operation</h5>'
+      infoWindow.setContent("<div id= 'infoWindow'><h4>" + currentPlaceName + "</h4><p>&quot;" + currentPlaceReview + "&quot;</p><p class='author'> -" +currentPlaceAuthor+ ', ' + currentPlaceReviewTime + '</p><h5>Hours of Operation</h5>'
         + '<p class="hours">' + currentPlaceHours[0] + '</p>'
         + '<p class="hours">' + currentPlaceHours[1] + '</p>'
         + '<p class="hours">' + currentPlaceHours[2] + '</p>'
@@ -147,7 +147,7 @@ function createMarker(place) {
         + '<p class="hours">' + currentPlaceHours[4] + '</p>'
         + '<p class="hours">' + currentPlaceHours[5] + '</p>'
         + '<p class="hours">' + currentPlaceHours[6]
-        + "</p><button class='btn btn-primary' id='addToCrawl'>Add To Crawl</button>");
+        + "</p><button class='btn btn-primary' id='addToCrawl'>Add To Crawl</button></div>");
       infoWindow.open(map, that);
       //Click on the addToCrawl button
       $("#addToCrawl").on("click", function(){
